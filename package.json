@@ -1,10 +1,117 @@
 {
-  "name": "vodo-react-components",
+  "name": "vodo-react-components-test",
   "description": "React resusable components for VODO fronend developers",
-  "version": "2.0.5",
+  "version": "1.1.6",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./Button": {
+      "import": "./dist/button.mjs",
+      "require": "./dist/button.js",
+      "types": "./dist/button.d.ts"
+    },
+    "./BusinessCard": {
+      "import": "./dist/business-card.mjs",
+      "require": "./dist/business-card.js",
+      "types": "./dist/business-card.d.ts"
+    },
+    "./CardWrapper": {
+      "import": "./dist/card-wrapper.mjs",
+      "require": "./dist/card-wrapper.js",
+      "types": "./dist/card-wrapper.d.ts"
+    },
+    "./DropDown": {
+      "import": "./dist/DropDown.mjs",
+      "require": "./dist/DropDown.js",
+      "types": "./dist/DropDown.d.ts"
+    },
+    "./InputFile": {
+      "import": "./dist/input-file.mjs",
+      "require": "./dist/input-file.js",
+      "types": "./dist/input-file.d.ts"
+    },
+    "./Login": {
+      "import": "./dist/Login.mjs",
+      "require": "./dist/Login.js",
+      "types": "./dist/Login.d.ts"
+    },
+    "./MainTabel": {
+      "import": "./dist/MainTabel.mjs",
+      "require": "./dist/MainTabel.js",
+      "types": "./dist/MainTabel.d.ts"
+    },
+    "./NavigationTrail": {
+      "import": "./dist/navigation-trail.mjs",
+      "require": "./dist/navigation-trail.js",
+      "types": "./dist/navigation-trail.d.ts"
+    },
+    "./PaginationComponent": {
+      "import": "./dist/PaginationComponent.mjs",
+      "require": "./dist/PaginationComponent.js",
+      "types": "./dist/PaginationComponent.d.ts"
+    },
+    "./SearchInput": {
+      "import": "./dist/search-input.mjs",
+      "require": "./dist/search-input.js",
+      "types": "./dist/search-input.d.ts"
+    },
+    "./Selector": {
+      "import": "./dist/selector.mjs",
+      "require": "./dist/selector.js",
+      "types": "./dist/selector.d.ts"
+    },
+    "./SideBar": {
+      "import": "./dist/sidebar.mjs",
+      "require": "./dist/sidebar.js",
+      "types": "./dist/sidebar.d.ts"
+    },
+    "./Status": {
+      "import": "./dist/status.mjs",
+      "require": "./dist/status.js",
+      "types": "./dist/status.d.ts"
+    },
+    "./SubmissionProgress": {
+      "import": "./dist/submissionProgress.mjs",
+      "require": "./dist/submissionProgress.js",
+      "types": "./dist/submissionProgress.d.ts"
+    },
+    "./Switcher": {
+      "import": "./dist/switcher.mjs",
+      "require": "./dist/switcher.js",
+      "types": "./dist/switcher.d.ts"
+    },
+    "./TextArea": {
+      "import": "./dist/textarea.mjs",
+      "require": "./dist/textarea.js",
+      "types": "./dist/textarea.d.ts"
+    },
+    "./UserInput": {
+      "import": "./dist/user-input.mjs",
+      "require": "./dist/user-input.js",
+      "types": "./dist/user-input.d.ts"
+    },
+    "./UserNav": {
+      "import": "./dist/user-nav.mjs",
+      "require": "./dist/user-nav.js",
+      "types": "./dist/user-nav.d.ts"
+    },
+    "./UserProfile": {
+      "import": "./dist/user-profile.mjs",
+      "require": "./dist/user-profile.js",
+      "types": "./dist/user-profile.d.ts"
+    },
+    "./Input": {
+      "import": "./dist/input.mjs",
+      "require": "./dist/input.js",
+      "types": "./dist/input.d.ts"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mustafaahmed-f/vodo-reusable-components"
@@ -51,7 +158,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.26.0",
-    "vodo-react-components": "file:",
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {
