@@ -3,7 +3,7 @@ import cssModulesPlugin from "esbuild-css-modules-plugin";
 
 export default defineConfig({
   entry: {
-    index: "./src/index.ts",
+    index: "./src/index.css",
     switcher: "./src/Components/Main-Components/switcher.tsx",
     button: "./src/Components/Main-Components/button.tsx",
     "user-nav": "./src/Components/Main-Components/user-nav.tsx",

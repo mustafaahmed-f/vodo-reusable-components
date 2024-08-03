@@ -1,117 +1,10 @@
 {
   "name": "vodo-react-components-test",
-  "description": "React resusable components for VODO fronend developers",
-  "version": "1.1.6",
+  "description": "React reusable components for VODO frontend developers",
+  "version": "1.2.0",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./Button": {
-      "import": "./dist/button.mjs",
-      "require": "./dist/button.js",
-      "types": "./dist/button.d.ts"
-    },
-    "./BusinessCard": {
-      "import": "./dist/business-card.mjs",
-      "require": "./dist/business-card.js",
-      "types": "./dist/business-card.d.ts"
-    },
-    "./CardWrapper": {
-      "import": "./dist/card-wrapper.mjs",
-      "require": "./dist/card-wrapper.js",
-      "types": "./dist/card-wrapper.d.ts"
-    },
-    "./DropDown": {
-      "import": "./dist/DropDown.mjs",
-      "require": "./dist/DropDown.js",
-      "types": "./dist/DropDown.d.ts"
-    },
-    "./InputFile": {
-      "import": "./dist/input-file.mjs",
-      "require": "./dist/input-file.js",
-      "types": "./dist/input-file.d.ts"
-    },
-    "./Login": {
-      "import": "./dist/Login.mjs",
-      "require": "./dist/Login.js",
-      "types": "./dist/Login.d.ts"
-    },
-    "./MainTabel": {
-      "import": "./dist/MainTabel.mjs",
-      "require": "./dist/MainTabel.js",
-      "types": "./dist/MainTabel.d.ts"
-    },
-    "./NavigationTrail": {
-      "import": "./dist/navigation-trail.mjs",
-      "require": "./dist/navigation-trail.js",
-      "types": "./dist/navigation-trail.d.ts"
-    },
-    "./PaginationComponent": {
-      "import": "./dist/PaginationComponent.mjs",
-      "require": "./dist/PaginationComponent.js",
-      "types": "./dist/PaginationComponent.d.ts"
-    },
-    "./SearchInput": {
-      "import": "./dist/search-input.mjs",
-      "require": "./dist/search-input.js",
-      "types": "./dist/search-input.d.ts"
-    },
-    "./Selector": {
-      "import": "./dist/selector.mjs",
-      "require": "./dist/selector.js",
-      "types": "./dist/selector.d.ts"
-    },
-    "./SideBar": {
-      "import": "./dist/sidebar.mjs",
-      "require": "./dist/sidebar.js",
-      "types": "./dist/sidebar.d.ts"
-    },
-    "./Status": {
-      "import": "./dist/status.mjs",
-      "require": "./dist/status.js",
-      "types": "./dist/status.d.ts"
-    },
-    "./SubmissionProgress": {
-      "import": "./dist/submissionProgress.mjs",
-      "require": "./dist/submissionProgress.js",
-      "types": "./dist/submissionProgress.d.ts"
-    },
-    "./Switcher": {
-      "import": "./dist/switcher.mjs",
-      "require": "./dist/switcher.js",
-      "types": "./dist/switcher.d.ts"
-    },
-    "./TextArea": {
-      "import": "./dist/textarea.mjs",
-      "require": "./dist/textarea.js",
-      "types": "./dist/textarea.d.ts"
-    },
-    "./UserInput": {
-      "import": "./dist/user-input.mjs",
-      "require": "./dist/user-input.js",
-      "types": "./dist/user-input.d.ts"
-    },
-    "./UserNav": {
-      "import": "./dist/user-nav.mjs",
-      "require": "./dist/user-nav.js",
-      "types": "./dist/user-nav.d.ts"
-    },
-    "./UserProfile": {
-      "import": "./dist/user-profile.mjs",
-      "require": "./dist/user-profile.js",
-      "types": "./dist/user-profile.d.ts"
-    },
-    "./Input": {
-      "import": "./dist/input.mjs",
-      "require": "./dist/input.js",
-      "types": "./dist/input.d.ts"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mustafaahmed-f/vodo-reusable-components"
@@ -138,12 +31,6 @@
     "build-css": "postcss src/styles/tailwind.css -o dist/assets/styles/tailwind.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
-  "size-limit": [
-    {
-      "path": "dist/index.js",
-      "limit": "600 KB"
-    }
-  ],
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@radix-ui/react-accordion": "^1.2.0",
@@ -179,7 +66,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.24.7",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.24.7",
     "@size-limit/preset-small-lib": "^11.1.4",
     "@swc/core": "^1.6.6",
@@ -195,6 +83,7 @@
     "ajv": "^8.16.0",
     "autoprefixer": "^10.4.19",
     "babel-jest": "^29.7.0",
+    "babel-plugin-transform-imports": "^2.0.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
@@ -206,7 +95,6 @@
     "postcss-import": "^16.1.0",
     "react-day-picker": "^8.10.1",
     "react-scripts": "^5.0.1",
-    "size-limit": "^11.1.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.4",
     "tailwindcss-animate": "^1.0.7",
